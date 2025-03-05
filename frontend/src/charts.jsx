@@ -13,7 +13,7 @@ const TrackCharts = () => {
             if (!email) return;
 
             try {
-                const response = await fetch("http://localhost:5000/get-track", {
+                const response = await fetch("https://health-help-1.onrender.com/get-track", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ email }),
