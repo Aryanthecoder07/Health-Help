@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, 
+    #cb5fb7, /* Soft Pink */
+    #4af46f, /* Peach */
+    #a677f2, /* Light Purple */
+    #6995db, /* Sky Blue */
+    #eef437, /* Baby Blue */
+    #a1d52a, /* Soft Green */
+    #e75656  /* Light Yellow */
+  );
+  
+  animation: gradientBG 10s ease infinite;
+  color: black;  /* Set text color to black */
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
