@@ -19,7 +19,7 @@ function Tracker() {
         }
 
         try {
-            const response = await fetch("http://localhost:5000/track", {
+            const response = await fetch("https://health-help-1.onrender.com/track", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
